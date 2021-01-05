@@ -1,5 +1,5 @@
-Attribute VB_Name = "Módulo1"
-Sub breakit()
+Attribute VB_Name = "MÃ³dulo1"
+Sub desbloquear()
 
 Dim i As Integer, j As Integer, k As Integer
 Dim l As Integer, m As Integer, n As Integer
@@ -20,8 +20,8 @@ ActiveSheet.Unprotect Chr(i) & Chr(j) & Chr(k) & _
 Chr(l) & Chr(m) & Chr(i1) & Chr(i2) & Chr(i3) & _
 Chr(i4) & Chr(i5) & Chr(i6) & Chr(n)
 If ActiveSheet.ProtectContents = False Then
-Application.Speech.Speak ("La contraseña ha sido quitada")
-MsgBox "La contraseña ha sido quitada"
+Application.Speech.Speak ("La contraseÃ±a ha sido quitada")
+MsgBox "La contraseÃ±a ha sido quitada"
 Exit Sub
 End If
 Next
