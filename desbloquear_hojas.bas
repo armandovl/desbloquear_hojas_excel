@@ -1,6 +1,9 @@
 Attribute VB_Name = "Módulo1"
-Sub desbloquear()
 
+'Armando Valdés
+'Facebook : Sé un Cinta Negra en Excel
+
+Sub desbloquear()
 Dim i As Integer, j As Integer, k As Integer
 Dim l As Integer, m As Integer, n As Integer
 On Error Resume Next
@@ -20,7 +23,7 @@ ActiveSheet.Unprotect Chr(i) & Chr(j) & Chr(k) & _
 Chr(l) & Chr(m) & Chr(i1) & Chr(i2) & Chr(i3) & _
 Chr(i4) & Chr(i5) & Chr(i6) & Chr(n)
 If ActiveSheet.ProtectContents = False Then
-Application.Speech.Speak ("La contraseña ha sido quitada")
+  Application.Speech.Speak ("La contraseña ha sido quitada exitosamente")
 MsgBox "La contraseña ha sido quitada"
 Exit Sub
 End If
@@ -36,6 +39,5 @@ Next
 Next
 Next
 Next
-
 End Sub
 
